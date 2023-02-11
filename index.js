@@ -29,7 +29,7 @@ app.get("/service", (req, res) => {
 
 app.post("/ana", (req, res) => {
     console.log(req.body.fore);
-    pdf.create(html, options).toFile('./businesscarddd.pdf', function (err, response) {
+    pdf.create(html, options).toFile('./business.pdf', function (err, response) {
         if (response){
             console.log(response);
             res.send(response);
